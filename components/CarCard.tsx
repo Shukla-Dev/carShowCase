@@ -10,6 +10,7 @@ import { CarCardProps } from '@/types';
 const CarCard = ({ car }: CarCardProps) => {
 	const { city_mpg, drive, year, make, model, transmission } = car;
 	const [isOpen, setIsOpen] = useState(false);
+	console.log(isOpen);
 
 	const carRent = calculateCarRent(city_mpg, year);
 
